@@ -1,7 +1,15 @@
 from scrapy.item import Item, Field
 
-class Website(Item):
+class Meeting(Item):
 
-    name = Field()
-    description = Field()
+    title = Field()
     url = Field()
+
+class MeetingItem(Item):
+
+    title = Field()
+    ingress = Field()
+    content = Field()
+    suggestion = Field()
+    attachments = Field()
+    delivery = Field()
